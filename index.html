@@ -1,108 +1,63 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<link href='./style/css/bootstrap.min.css' rel="stylesheet">
-		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-		<script src="./style/js/bootstrap.min.js" ></script>
-	</head>
-	<body>
-		<div class="navbar navbar-default navbar-fixed-top">
-		  <div class="container">
-			<div class="navbar-header">
-			  <a class="navbar-brand" href="../">Iñaki Garcia</a>
-			</div>
-			<div id="navbar-main" class="navbar-collapse collapse">
-			  <ul class="nav navbar-nav">
-				<li class="dropdown">
-				  <a id="download" href="#" data-toggle="dropdown" class="dropdown-toggle">Certificates <span class="caret"></span></a>
-				  <ul aria-labelledby="download" class="dropdown-menu">
-					<li>
-						<a href="/certificates/cert-PSM I.pdf" target="_blank">
-							Professional Scrum Master PSM1
-						</a>
-					</li>
-					<li>
-						<a href="/certificates/cert-NPM-BUILD-TOL.pdf" target="_blank">
-							NPM as a build tool
-						</a>
-					</li>
-					<li>
-						<a href="/certificates/cert-BROWSERIFY.pdf" target="_blank">
-							Creating JavaScript Modules with Browserify
-						</a>
-					</li>
-					<li>
-						<a href="/certificates/cert-M1014J.pdf" target="_blank">
-							MongoDB for Java developers
-						</a>
-					</li>
-					<li>
-						<a href="/certificates/cert-Automated-Web-Testing-Selenium.pdf" target="_blank">
-							Automated Web Testing with Selenium
-						</a>
-					</li>
-					<li>
-						<a href="/certificates/UC-AI5ATIU8.pdf" target="_blank">
-							Apache Camel for Beginners - Learn by Coding in Java
-						</a>
-					</li>
-					<li>
-						<a href="/certificates/cert-Introduction-to-integration-with-apache-camel.pdf" target="_blank">
-							Introduction to integration with Apache Camel
-						</a>
-					</li>
-					<li>
-						<a href="/certificates/UC-Apache-kafka-for-beginners.pdf" target="_blank">
-							Apache Kafka for beginners - Learn Kafka by Hands-On
-						</a>
-					</li>
-					<li>
-						<a href="/certificates/UC-Apache-Kafka-Series-Kafka-Connect-Hands-on-Learning.pdf" target="_blank">
-							Apache Kafka Series - Kafka Connect Hands-on Learning
-						</a>
-					</li>
-					<li>
-						<a href="/certificates/UC-BR7MY5ON.pdf" target="_blank">
-							Docker Crash Course for busy DevOps and Developers
-						</a>
-					</li>
-					<li>
-						<a href="/certificates/docker-fundamentals.pdf" target="_blank">
-							Docker Fundamentals
-						</a>
-					</li>
-					<li>
-						<a href="/certificates/docker-for.enterprise-developors.pdf" target="_blank">
-							Docker for Enterprise Developers
-						</a>
-					</li>
-					<li>
-						<a href="/certificates/UC-VY927I1E.pdf" target="_blank">
-							Kubernetes for the Absolute Beginners - Hands-on
-						</a>
-					</li>
-					<li>
-						<a href="/certificates/reactive-programming-in-modern-java-using-project-reactor.pdf" target="_blank">
-							Reactive Programming in Modern Java using Project Reactor
-						</a>
-					</li>
-					<li>
-						<a href="/certificates/build-reactive.microservices-using-spring-webflux.pdf" target="_blank">
-							Build Reactive Microservices Using Spring Webflux
-						</a>
-					</li>
-				  </ul>
-				</li>
-			  </ul>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../">Iñaki Garcia</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Certificates <i class="fas fa-certificate"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">Development:</h6>
+                        <a class="dropdown-item" href="/certificates/cert-PSM I.pdf" target="_blank">Professional Scrum Master PSM1</a>
+                        <a class="dropdown-item" href="/certificates/cert-NPM-BUILD-TOL.pdf" target="_blank">NPM as a build tool</a>
+                        <a class="dropdown-item" href="/certificates/cert-BROWSERIFY.pdf" target="_blank">Creating JavaScript Modules with Browserify</a>
+                        <a class="dropdown-item" href="/certificates/cert-M1014J.pdf" target="_blank">MongoDB for Java developers</a>
+                        <!-- Agrega más certificados de desarrollo aquí -->
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">Testing:</h6>
+                        <a class="dropdown-item" href="/certificates/cert-Automated-Web-Testing-Selenium.pdf" target="_blank">Automated Web Testing with Selenium</a>
+                        <!-- Agrega más certificados de testing aquí -->
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">Integration:</h6>
+                        <a class="dropdown-item" href="/certificates/UC-AI5ATIU8.pdf" target="_blank">Apache Camel for Beginners - Learn by Coding in Java</a>
+                        <a class="dropdown-item" href="/certificates/cert-Introduction-to-integration-with-apache-camel.pdf" target="_blank">Introduction to integration with Apache Camel</a>
+                        <!-- Agrega más certificados de integración aquí -->
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">Containers & Orchestration:</h6>
+                        <a class="dropdown-item" href="/certificates/UC-BR7MY5ON.pdf" target="_blank">Docker Crash Course for busy DevOps and Developers</a>
+                        <a class="dropdown-item" href="/certificates/docker-fundamentals.pdf" target="_blank">Docker Fundamentals</a>
+                        <a class="dropdown-item" href="/certificates/docker-for.enterprise-developors.pdf" target="_blank">Docker for Enterprise Developers</a>
+                        <a class="dropdown-item" href="/certificates/UC-VY927I1E.pdf" target="_blank">Kubernetes for the Absolute Beginners - Hands-on</a>
+                        <!-- Agrega más certificados de contenedores y orquestación aquí -->
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">Reactive Programming:</h6>
+                        <a class="dropdown-item" href="/certificates/reactive-programming-in-modern-java-using-project-reactor.pdf" target="_blank">Reactive Programming in Modern Java using Project Reactor</a>
+                        <a class="dropdown-item" href="/certificates/build-reactive.microservices-using-spring-webflux.pdf" target="_blank">Build Reactive Microservices Using Spring Webflux</a>
+                        <!-- Agrega más certificados de programación reactiva aquí -->
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-			</div>
-		  </div>
-		</div>
-		<div class="container">
-			<h1>Hello World</h1>
-			<p>I'm hosted with GitHub Pages.</p>
-		</div>
-		
-	</body>
+    <div class="container mt-5">
+        <h1>Hello World</h1>
+        <p>I'm hosted with GitHub Pages.</p>
+    </div>
+</body>
 </html>
